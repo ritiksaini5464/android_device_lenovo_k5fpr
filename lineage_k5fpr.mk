@@ -20,14 +20,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from A7010 device
 $(call inherit-product, device/lenovo/k5fpr/device_k5fpr.mk)
 
-# Inherit some common xtended stuff.
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/stag/main.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 PRODUCT_DEVICE := k5fpr
-PRODUCT_NAME := stag_k5fpr
+PRODUCT_NAME := lineage_k5fpr
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo A7010a48
